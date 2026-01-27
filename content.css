@@ -1,0 +1,7 @@
+.video-discription{
+    display: flex;
+    flex-direction: column;
+}
+.video-thumbnail{
+    height: 200px;
+}
