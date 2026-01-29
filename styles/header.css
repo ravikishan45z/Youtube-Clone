@@ -1,18 +1,30 @@
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
   justify-content: space-between;
-  margin-bottom: 20px;
+  height: 60px;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 .left-section {
-  display: flex;
-  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   max-width: 160px;
   align-items: center;
   margin-right: 30px;
+  margin-left: 20px;
 }
 .hamburger-menu {
   height: 35px;
   width: 35px;
+  cursor: pointer;
+}
+.hamburger-menu:hover {
+  background-color: rgb(236, 236, 236);
 }
 .youtube-logo {
   height: 28px;
@@ -20,24 +32,29 @@
 }
 .middle-section {
   display: flex;
-  flex: 2;
-  max-width: 500px;
+  max-width: 750px;
   align-items: center;
   margin-right: 30px;
 }
 .Search-bar {
-  flex: 1;
+  flex: 3;
   padding-left: 10px;
   height: 50px;
   border-style: solid;
   border-color: rgb(216, 216, 216);
+  cursor: pointer;
 }
 .Search-bar::placeholder {
   font-size: 20px;
 }
+.Search-bar:focus {
+  outline: none;
+  font-size: 18px;
+}
 .search-icon-image {
   height: 35px;
   margin-top: 5px;
+  cursor: pointer;
 }
 .search-icons {
   height: 54px;
@@ -51,6 +68,7 @@
 .voice-icon-image {
   height: 35px;
   margin-top: 5px;
+  cursor: pointer;
 }
 .voice-search-icon {
   height: 54px;
@@ -63,23 +81,48 @@
 }
 .right-section {
   display: flex;
-  flex: 1;
-  max-width: 300px;
+  max-width: 250px;
   margin-left: 40px;
   justify-content: space-between;
   align-items: center;
 }
 .upload-image {
   height: 35px;
+  cursor: pointer;
+}
+.upload-image:hover {
+  background-color: rgb(236, 236, 236);
 }
 .apps-icon {
   height: 35px;
+  cursor: pointer;
+}
+.apps-icon:hover {
+  background-color: rgb(236, 236, 236);
 }
 .notification-icon {
   height: 35px;
+  cursor: pointer;
+}
+.notification{
+  position: relative;
+}
+.notification-count{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(214, 56, 56);
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+.notification-icon:hover {
+  background-color: rgb(236, 236, 236);
 }
 .profile-pictutes {
   height: 35px;
   width: 35px;
   border-radius: 20px;
+  cursor: pointer;
 }

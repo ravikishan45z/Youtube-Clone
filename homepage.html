@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube</title>
-    <link rel="stylesheet" href="general_style.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="content.css">
+    <title>Youtube-Clone</title>
+    <link rel="stylesheet" href="styles/general_style.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/content.css">
 </head>
 
 <body>
@@ -35,20 +36,56 @@
             <div class="right-section">
                 <img class="upload-image" src="/icons/upload.svg" alt="upload-icon">
                 <img class="apps-icon" src="/icons/youtube-apps.svg" alt="apps-icon">
-                <img class="notification-icon" src="/icons/notifications.svg" alt="notification-icon">
+                <div class="notification">
+                    <img class="notification-icon" src="./icons/notifications.svg" alt="notification-icon">
+                    <div class="notification-count">4</div>
+                </div>
                 <img class="profile-pictutes" src="/icons/my-channel.jpeg" alt="profile-pictute">
             </div>
         </div>
     </header>
 
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <img class="sidebar-icons" src="./icons/home.svg" alt="home">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-icons" src="./icons/explore.svg" alt="explore">
+            <div>EXPLORE</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-icons" src="./icons/subscriptions.svg" alt="subscriptions">
+            <div>Subscription</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-icons" src="./icons/originals.svg" alt="originals">
+            <div>originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-icons" src="./icons/youtube-music.svg" alt="youtube-music">
+            <div>Youtube music</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-icons" src="./icons/library.svg" alt="library">
+            <div>Library</div>
+        </div>
+    </div>
+
     <div class="content-section">
+
         <div class="video-discription">
             <div class="thumbnails">
-                <img class="video-thumbnail" src="/thumbnails/30 min.avif" alt="30-min-to-fix-your-life">
+                <a href="https://youtu.be/BESvATQ1TPc?si=05_YNx35N9A2I-F8" target="_blank">
+                    <img class="video-thumbnail" src="/thumbnails/30 min.avif" alt="30-min-to-fix-your-life">
+                </a>
+                <div class="video-length">27&colon;23</div>
             </div>
             <div class="information">
                 <div>
-                    <img class="channel-logo" src="/profile_picture/gt_space.jpg" alt="logo">
+                    <a href="https://www.youtube.com/@gtspace2" target="_blank">
+                        <img class="channel-logo" src="/profile_picture/gt_space.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="video-iformation">
                     <div>
@@ -68,11 +105,16 @@
 
         <div class="video-discription">
             <div class="thumbnails">
-                <img class="video-thumbnail" src="/thumbnails/about apis.avif" alt="about apis">
+                <a href="https://youtu.be/bxuYDT-BWaI?si=lIgEL1-dvdO0kD06" target="_blank">
+                    <img class="video-thumbnail" src="/thumbnails/about apis.avif" alt="about apis">
+                </a>
+                <div class="video-length">3&colon;57</div>
             </div>
             <div class="information">
                 <div>
-                    <img class="channel-logo" src="/profile_picture/apis.jpg" alt="logo">
+                    <a href="https://www.youtube.com/@tryexponent" target="_blank">
+                        <img class="channel-logo" src="/profile_picture/apis.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="video-iformation">
                     <div>
@@ -92,11 +134,16 @@
 
         <div class="video-discription">
             <div class="thumbnails">
-                <img class="video-thumbnail" src="/thumbnails/build real app.avif" alt="Build real hotel apps">
+                <a href="https://youtu.be/1GIdiAHXafk?si=kDmB034IXZ47QouX" target="_blank">
+                    <img class="video-thumbnail" src="/thumbnails/build real app.avif" alt="Build real hotel apps">
+                    <div class="video-length">13&colon;26</div>
+                </a>
             </div>
             <div class="information">
                 <div>
-                    <img class="channel-logo" src="/profile_picture/build real apps.jpg" alt="logo">
+                    <a href="https://www.youtube.com/@collegecoders1" target="_blank">
+                        <img class="channel-logo" src="/profile_picture/build real apps.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="video-iformation">
                     <div>
@@ -106,7 +153,9 @@
                         </p>
                     </div>
                     <div>
+
                         <p class="channel-name">College Coders</p>
+
                     </div>
                     <div>
                         <p class="channel-insight">381 views&dot;12 hours ago </p>
@@ -117,11 +166,16 @@
 
         <div class="video-discription">
             <div class="thumbnails">
-                <img class="video-thumbnail" src="/thumbnails/c++_in_danger.avif" alt="C++ is in danger">
+                <a href="https://youtu.be/ECdoBB_ut8s?si=IkGanMpjj6jsRRXW" target="_blank">
+                    <img class="video-thumbnail" src="/thumbnails/c++_in_danger.avif" alt="C++ is in danger">
+                </a>
+                <div class="video-length">9&colon;56</div>
             </div>
             <div class="information">
                 <div>
-                    <img class="channel-logo" src="/profile_picture/c++ in danger.jpg" alt="logo">
+                    <a href="https://www.youtube.com/@HarshitaVerma-yt" target="_blank">
+                        <img class="channel-logo" src="/profile_picture/c++ in danger.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="video-iformation">
                     <div>
@@ -130,7 +184,9 @@
                         </p>
                     </div>
                     <div>
+
                         <p class="channel-name">Harshita Verma</p>
+
                     </div>
                     <div>
                         <p class="channel-insight">13k views&dot;2 weeks ago </p>
@@ -141,11 +197,17 @@
 
         <div class="video-discription">
             <div class="thumbnails">
-                <img class="video-thumbnail" src="/thumbnails/coding-setup.avif" alt="Full coding setup">
+                <a href="https://youtu.be/Kc30mpqP0-0?si=1rwD51A0Ap1Vphxw" target="_blank">
+                    <img class="video-thumbnail" src="/thumbnails/coding-setup.avif" alt="Full coding setup">
+                </a>
+                <div class="video-length">4&colon;45</div>
             </div>
             <div class="information">
                 <div>
-                    <img class="channel-logo" src="/profile_picture/coding setup.jpg" alt="logo">
+                    <a href="https://www.youtube.com/@AsliAnubhav" target="_blank">
+                        <img class="channel-logo" src="/profile_picture/coding setup.jpg" alt="logo">
+                    </a>
+
                 </div>
                 <div class="video-iformation">
                     <div>
@@ -154,7 +216,9 @@
                         </p>
                     </div>
                     <div>
+
                         <p class="channel-name">Anubhav Choubey</p>
+
                     </div>
                     <div>
                         <p class="channel-insight">40k views&dot;2 months ago </p>
@@ -165,11 +229,16 @@
 
         <div class="video-discription">
             <div class="thumbnails">
-                <img class="video-thumbnail" src="/thumbnails/consistency.avif" alt="How to become consistence">
+                <a href="https://youtu.be/O2EwFbxYeDM?si=avhlXMzH6ohETx0e" target="_blank">
+                    <img class="video-thumbnail" src="/thumbnails/consistency.avif" alt="How to become consistence">
+                </a>
+                <div class="video-length">5&colon;51</div>
             </div>
             <div class="information">
                 <div>
-                    <img class="channel-logo" src="/profile_picture/consistency.jpg" alt="logo">
+                    <a href="https://www.youtube.com/@TharunSpeaks" target="_blank">
+                        <img class="channel-logo" src="/profile_picture/consistency.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="video-iformation">
                     <div>
@@ -189,12 +258,17 @@
 
         <div class="video-discription">
             <div class="thumbnails">
-                <img class="video-thumbnail" src="/thumbnails/future of computer.avif"
-                    alt="Future of computer science for Engineering Students">
+                <a href="https://youtu.be/URepBV8jHjA?si=dzKK5RpXBcVKHaCA" target="_blank">
+                    <img class="video-thumbnail" src="/thumbnails/future of computer.avif"
+                        alt="Future of computer science for Engineering Students">
+                    <div class="video-length">11&colon;27</div>
+                </a>
             </div>
             <div class="information">
                 <div>
-                    <img class="channel-logo" src="/profile_picture/channels4_profile.jpg" alt="logo">
+                    <a href="https://www.youtube.com/@GeeksforGeeksVideos" target="_blank">
+                        <img class="channel-logo" src="/profile_picture/channels4_profile.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="video-iformation">
                     <div>
@@ -214,11 +288,16 @@
 
         <div class="video-discription">
             <div class="thumbnails">
-                <img class="video-thumbnail" src="/thumbnails/gsoc.avif" alt="Get selected in Gsoc">
+                <a href=" https://youtu.be/kJ6MppXJnKI?si=nHuuxtwJ2v1sFp9K" target="_blank">
+                    <img class="video-thumbnail" src="/thumbnails/gsoc.avif" alt="Get selected in Gsoc">
+                    <div class="video-length">15&colon;53</div>
+                </a>
             </div>
             <div class="information">
                 <div>
-                    <img class="channel-logo" src="/profile_picture/gsoc.jpg" alt="logo">
+                    <a href="https://www.youtube.com/@NishantChahar11" target="_blank">
+                        <img class="channel-logo" src="/profile_picture/gsoc.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="video-iformation">
                     <div>
@@ -238,11 +317,17 @@
 
         <div class="video-discription">
             <div class="thumbnails">
-                <img class="video-thumbnail" src="/thumbnails/i will do tomarrow.avif" alt="i will do tomarrow">
+                <a href="https://youtu.be/VDBncKw5v_o?si=jFnOlCTFepr8TBAP" target="_blank">
+                    <img class="video-thumbnail" src="/thumbnails/i will do tomarrow.avif" alt="i will do tomarrow">
+                    <div class="video-length">6&colon;49</div>
+                </a>
             </div>
             <div class="information">
                 <div>
-                    <img class="channel-logo" src="/profile_picture/tomarrow.jpg" alt="logo">
+
+                    <a href="https://www.youtube.com/channel/UCy-3MUXkovGrm4kp43V78bQ" target="_blank">
+                        <img class="channel-logo" src="/profile_picture/tomarrow.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="video-iformation">
                     <div>
@@ -263,11 +348,16 @@
 
         <div class="video-discription">
             <div class="thumbnails">
-                <img class="video-thumbnail" src="/thumbnails/laptop guide.avif" alt="Laptop Guide for students">
+                <a href="https://youtu.be/ITkIdDyXeag?si=d7BRlQhAm1L8BznX" target="_blank">
+                    <img class="video-thumbnail" src="/thumbnails/laptop guide.avif" alt="Laptop Guide for students">
+                    <div class="video-length">23&colon;33</div>
+                </a>
             </div>
             <div class="information">
                 <div>
-                    <img class="channel-logo" src="/profile_picture/laptop guide.jpg" alt="logo">
+                    <a href="https://www.youtube.com/@CodeWithHarry" target="_blank">
+                        <img class="channel-logo" src="/profile_picture/laptop guide.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="video-iformation">
                     <div>
@@ -287,11 +377,16 @@
 
         <div class="video-discription">
             <div class="thumbnails">
-                <img class="video-thumbnail" src="/thumbnails/palcement-cource.avif" alt="palcement-cource">
+                <a href="https://youtu.be/RzH5P-f4abg?si=kbJ3Fh08hlcaVnvd" target="_blank">
+                    <img class="video-thumbnail" src="/thumbnails/palcement-cource.avif" alt="palcement-cource">
+                    <div class="video-length">26&colon;43</div>
+                </a>
             </div>
             <div class="information">
                 <div>
-                    <img class="channel-logo" src="/profile_picture/palcement.jpg" alt="logo">
+                    <a href="https://www.youtube.com/@ApnaCollegeOfficial" target="_blank">
+                        <img class="channel-logo" src="/profile_picture/palcement.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="video-iformation">
                     <div>
@@ -312,11 +407,16 @@
 
         <div class="video-discription">
             <div class="thumbnails">
-                <img class="video-thumbnail" src="/thumbnails/build real app.avif" alt="Build real hotel apps">
+                <a href="https://youtu.be/nbwYotWqOB8?si=P065bTaMHU0V-zWW" target="_blank">
+                    <img class="video-thumbnail" src="/thumbnails/build real app.avif" alt="Build real hotel apps">
+                    <div class="video-length">13&colon;26</div>
+                </a>
             </div>
             <div class="information">
                 <div>
-                    <img class="channel-logo" src="/profile_picture/tcs.jpg" alt="Tcs internship">
+                    <a href="https://www.youtube.com/@JennyslecturesCSIT" target="_blank">
+                        <img class="channel-logo" src="/profile_picture/tcs.jpg" alt="Tcs internship">
+                    </a>
                 </div>
                 <div class="video-iformation">
                     <div>
@@ -333,6 +433,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </body>
 
